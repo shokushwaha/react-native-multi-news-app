@@ -17,14 +17,86 @@ export default function App() {
 
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="Home" component={Home} />
-          <Stack.Screen name="Sports" component={Sports} />
-          <Stack.Screen name="Headlines" component={Headlines} />
-          <Stack.Screen name="Science" component={Science} />
-          <Stack.Screen name="Health" component={Health} />
-          <Stack.Screen name="Technology" component={Technology} />
-          <Stack.Screen name="General" component={General} />
-          <Stack.Screen name="Business" component={Business} />
+          <Stack.Screen name="Home" component={Home} options={{
+            title: 'Home',
+            headerStyle: {
+              backgroundColor: 'black',
+            },
+            headerTintColor: 'azure',
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }} />
+          <Stack.Screen name="Sports" component={Sports} options={{
+            title: 'Sports',
+            headerStyle: {
+              backgroundColor: 'black',
+            },
+            headerTintColor: 'azure',
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }} />
+          <Stack.Screen name="Headlines" component={Headlines} options={{
+            title: 'Headlines',
+            headerStyle: {
+              backgroundColor: 'black',
+            },
+            headerTintColor: 'azure',
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }} />
+          <Stack.Screen name="Science" component={Science} options={{
+            title: 'Science',
+            headerStyle: {
+              backgroundColor: 'black',
+            },
+            headerTintColor: 'azure',
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }} />
+          <Stack.Screen name="Health" component={Health} options={{
+            title: 'Health',
+            headerStyle: {
+              backgroundColor: 'black',
+            },
+            headerTintColor: 'azure',
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }} />
+          <Stack.Screen name="Technology" component={Technology} options={{
+            title: 'Technology',
+            headerStyle: {
+              backgroundColor: 'black',
+            },
+            headerTintColor: 'azure',
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }} />
+          <Stack.Screen name="General" component={General} options={{
+            title: 'General',
+            headerStyle: {
+              backgroundColor: 'black',
+            },
+            headerTintColor: 'azure',
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }} />
+          <Stack.Screen name="Business" component={Business} options={{
+            title: 'Business',
+            headerStyle: {
+              backgroundColor: 'black',
+            },
+            headerTintColor: 'azure',
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }} />
         </Stack.Navigator>
       </NavigationContainer>
 

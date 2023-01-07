@@ -29,9 +29,9 @@ const Science = () => {
 
                 <AnimatedLoader
                     visible={loading}
-                    overlayColor="rgba(100,100,100)"
+                    overlayColor="rgba(255,255,255,0.75)"
                     animationStyle={styles.lottie}
-                    speed={2}>
+                    speed={1}>
                     <Text style={{ color: "yellow", marginBottom: 200 }} > Wait! loading....</Text>
                 </AnimatedLoader>
             </View>)
@@ -107,6 +107,10 @@ const styles = StyleSheet.create({
     },
     description: {
         fontSize: 11
-    }
+    },
+    lottie: {
+        width: 100,
+        height: 100,
+    },
 })
 export default Science
