@@ -1,12 +1,11 @@
 import { View, Text, FlatList, TouchableOpacity, StyleSheet, Image, Linking, ActivityIndicator } from 'react-native'
 import React, { useState, useEffect } from 'react'
-
+import AnimatedLoader from "react-native-animated-loader";
 import axios from 'axios'
-const url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=a0b9e39bbcdb4eaaaf6a2274e64d8d5e&q=in"
-const Main = () => {
+const url = "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=a0b9e39bbcdb4eaaaf6a2274e64d8d5e&q=in"
+const Business = () => {
     const [news, setNews] = useState([]);
     const [loading, setLoading] = useState(false);
-
     const getNews = async () => {
         try {
             setLoading(true);
@@ -18,19 +17,27 @@ const Main = () => {
             console.log(error);
         }
     }
+    useEffect(() => {
+        getNews();
+
+    }, []);
+
     if (loading)
         return (
             <View style={{ display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "#232e30", height: "100%", width: "100%" }} >
 
-                <ActivityIndicator size="large" color="yellow" />
+                <AnimatedLoader
+                    visible={loading}
+                    overlayColor="rgba(100,100,100)"
+                    animationStyle={styles.lottie}
+                    speed={2}>
+                    <Text style={{ color: "yellow", marginBottom: 200 }} > Wait! loading....</Text>
+                </AnimatedLoader>
             </View>)
     return (
         <View style={styles.mainBox} >
+            <Text style={{ textAlign: "center", color: "yellow", padding: 10, fontSize: 20, fontWeight: "bold" }} >Business</Text>
 
-
-            <TouchableOpacity onPress={getNews} style={styles.btn} >
-                <Text>Get News</Text>
-            </TouchableOpacity>
             <FlatList data={news}
                 renderItem={({ item }) => {
                     return (<View style={styles.newsBox} >
@@ -57,8 +64,7 @@ const Main = () => {
 }
 const styles = StyleSheet.create({
     mainBox: {
-        backgroundColor: "#232e30",
-        marginTop: 40
+        backgroundColor: "#232e30"
     },
     btn: {
         backgroundColor: "azure",
@@ -101,4 +107,4 @@ const styles = StyleSheet.create({
         fontSize: 11
     }
 })
-export default Main
+export default Business
