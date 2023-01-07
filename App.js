@@ -97,7 +97,7 @@ export default function App() {
               fontWeight: "bold",
             },
           }} />
-        </Stack.Navigator>
+        </Stack.Navigator>j
       </NavigationContainer>
 
     </SafeAreaProvider>
