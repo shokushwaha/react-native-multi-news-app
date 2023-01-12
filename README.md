@@ -5,14 +5,14 @@ Developed a cross platform mobile application with react native to read news art
 
 
 To run the project:
-### Tech Stack
+## Tech Stack
 
 React Native,Expo
 
 
 
 
-### To run the projext
+## To run the projext
 
 - Setup react native on your system with expo cli - https://reactnative.dev/docs/environment-setup
 
