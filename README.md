@@ -22,3 +22,4 @@ React Native,Expo
 - Start the server expo start
 - Run project on ios/andriod emulator or connect physical device or by scanning the qr code in expo go app, For android emulator/device press a
 
+![Screenshot (1)](https://user-images.githubusercontent.com/109756367/212084273-18116315-6ec9-423c-bd30-6c29e29c21ce.png)
