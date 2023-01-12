@@ -20,4 +20,4 @@ React Native,Expo
 - Clone the project
 - Install all dependencies and run npm install
 - Start the server expo start
-- Run project on ios/andriod emulator or connect physical device or by scanning the qr code in expo go app, For android emulator/device press a
+- Run project on ios/andriod emulator or connect physical device or by scanning the qr code in expo go app, For android emulator/device press a.
